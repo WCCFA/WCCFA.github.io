@@ -1,0 +1,33 @@
+{% extends "app/layout.html" %}
+
+{% block content %}
+
+<div class="jumbotron">
+    <h1>Wilson County Christmas For All</h1>
+        <p class="lead">Wilson County Christmas For All provides Christmas gifts for approximately 2000-2500 underprivileged children from newborns to age 15 in Wilson County every year with support from local organizations.</p>
+    <p><a href="{% url 'about' %}" class="btn btn-primary btn-large">Learn more &raquo;</a></p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Donate</h2>
+        <p>
+            Christmas For All could not function without donations from the community.  
+            Please consider contributing to help make a child's Christmas merry this year!
+        </p>
+        <p><a class="btn btn-default" href="{% url 'donate' %}">Donate &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Sponsor</h2>
+        <p>If you would like to get a list of children to shop for, including their wish list, please sign up to sponsor a group of children.  
+        If you are an organization, these names could be put on a angel tree.   Click below for more details.</p>
+        <p><a class="btn btn-default"href="{% url 'sponsor' %}">Become a Sponsor &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Volunteer</h2>
+        <p>We are always looking for volunteers to help with the day to day operations of our organization.  There are several ways you can help.  Click below to learn more.</p>
+        <p><a class="btn btn-default" href="{% url 'volunteer' %}">Volunteer &raquo;</a></p>
+    </div>
+</div>
+
+{% endblock %}
